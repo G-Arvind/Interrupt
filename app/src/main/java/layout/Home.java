@@ -24,7 +24,7 @@ public class Home extends Fragment implements MyInterface {
 
     ImageButton fbbutton,instabutton,mailbutton,webbutton;
 
-    RoundedImageView org1,org2,org3,org4;
+    RoundedImageView org1,org2,org3,org4,dev1,dev2,dev3,dev4;
 
     static String FACEBOOK_URL = "https://www.facebook.com/svceinterrupt";
     static String FACEBOOK_PAGE_ID = "svceinterrupt";
@@ -48,6 +48,12 @@ public class Home extends Fragment implements MyInterface {
         org2=(RoundedImageView)v.findViewById(R.id.org2);
         org3=(RoundedImageView)v.findViewById(R.id.org3);
         org4=(RoundedImageView)v.findViewById(R.id.org4);
+
+        dev1=(RoundedImageView)v.findViewById(R.id.dev1);
+        dev2=(RoundedImageView)v.findViewById(R.id.dev2);
+        dev3=(RoundedImageView)v.findViewById(R.id.dev3);
+        dev4=(RoundedImageView)v.findViewById(R.id.dev4);
+
 
         fbbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,6 +141,59 @@ public class Home extends Fragment implements MyInterface {
                 intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:9500185799"));
                 startActivity(intent);
+
+            }
+        });
+        dev1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url;
+                Intent intent;
+                url = "https://www.linkedin.com/in/arvind-g-b3a8a0157/";
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+
+
+            }
+        });
+        dev2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url;
+                Intent intent;
+                url = "https://www.linkedin.com/in/shivaram-ganesan-a1300a146/";
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+
+
+            }
+        });
+        dev3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url;
+                Intent intent;
+                url = "https://www.linkedin.com/in/shanmugha-priyan-1538a5157/";
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+
+
+            }
+        });
+        dev4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url;
+                Intent intent;
+
+                url = "https://www.linkedin.com/in/srinath48/";
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+
 
             }
         });

@@ -36,7 +36,6 @@ public class Route extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_route, container, false);
 
         progress=new ProgressDialog(getContext());
@@ -54,7 +53,6 @@ public class Route extends Fragment {
             }
 
             public void onPageFinished(WebView view, String url) {
-                Log.d("TEST", "testing");
                 browser.setVisibility(View.VISIBLE);
                 progress.dismiss();
             }
