@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ScrollView;
 
 import com.example.arvind.svceinterrupt.EventActivity;
 import com.example.arvind.svceinterrupt.InstructionActivity;
@@ -35,6 +36,9 @@ public class Dashboard extends Fragment implements MyInterface {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
+
+
+
 
         // This makes sure that the container activity has implemented
         // the callback interface. If not, it throws an exception

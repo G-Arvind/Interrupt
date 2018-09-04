@@ -86,6 +86,11 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
         navigationTabBar.setModels(barModel);
         navigationTabBar.setViewPager(viewPager, 0);
 
+        navigationTabBar.setTitleMode(NavigationTabBar.TitleMode.ALL);
+        navigationTabBar.setIsTitled(true);
+        navigationTabBar.setTitleSize(20);
+
+
         navigationTabBar.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(final int position, final float positionOffset, final int positionOffsetPixels) {
