@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:gravity="center"
+    android:id="@+id/ll"
+    tools:context="layout.Home">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_below="@+id/def_title"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1. Stop or hinder by breaking in"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2. To break the uniformity or continuity of"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_below="@+id/titlelayout"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/def_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WHAT IS INTERRUPT, REALLY"
+                android:textSize="25dp"
+
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"/>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="The place to be for anyone with a passion in Computer Science"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/textView3" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Interrupt has had students marking their calenders for years now and this year it’s back and bigger than ever! Burgeoing by leaps and bounds with more innovative events and our Magnum Opus attraction - the Drone Event."
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-condensed"/>
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#000000"
+            android:id="@+id/ll2"
+            android:layout_below="@+id/ll1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" “INTERRUPT IS FOR AND BY THE TECH ENTHUSIASTS, GEEKS AND QUIZZERS! “"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:gravity="center"/>
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE : 29TH SEPTEMBER ’18"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIME : 9 : 00 AM - 3 : 00 PM"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VENUE  : SVCE, SRIPERUMBUDUR "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Participants can use the SVCE buses for transportation "
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/def_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WHAT IS INTERRUPT?"
+            android:textSize="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/titlelayout"
+            android:layout_centerHorizontal="true" />
+
+<LinearLayout
+    android:background="#000000"
+    android:gravity="center"
+    android:id="@+id/ll3"
+    android:layout_below="@+id/ll2"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:src="@drawable/fab1"
+        android:background="#000000"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/fbbutton" />
+
+    <ImageButton
+        android:id="@+id/instabutton"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/inst"
+        android:background="#000000"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <ImageButton
+        android:id="@+id/mailbutton"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/email"
+        android:background="#000000"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <ImageButton
+        android:id="@+id/webbutton"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/web"
+        android:background="#000000"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+</LinearLayout>
+
+
+        <LinearLayout
+          android:id="@+id/ll4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll3"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need More Help?"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_below="@+id/titlelayout"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/con_icons2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/con_desc5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.github.siyamed.shapeimageview.RoundedImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/org1"
+                        android:src="@drawable/org3"
+                        app:siRadius="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#212121"
+                        app:siBorderWidth="0dp"
+                        app:siBorderColor="#212121"
+                        app:siSquare="true" />
+
+
+                    <TextView
+
+                        android:layout_marginLeft="-13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sathvik | President, ACE"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.github.siyamed.shapeimageview.RoundedImageView
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/org2"
+                    android:src="@drawable/orgc"
+                    app:siRadius="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="#212121"
+                    app:siBorderWidth="0dp"
+                    app:siBorderColor="#212121"
+                    app:siSquare="true" />
+
+                    <TextView
+
+                        android:layout_marginLeft="-1dp"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chran | Vice-President, ACE"
+                        android:layout_weight="1"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+
+                    <com.github.siyamed.shapeimageview.RoundedImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/org3"
+                        android:src="@drawable/org1"
+                        app:siRadius="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#212121"
+                        app:siBorderWidth="0dp"
+                        app:siBorderColor="#212121"
+                        app:siSquare="true"/>
+
+                    <TextView
+
+                        android:layout_marginLeft="-13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Shravan Dheep | Seceratary, ACE"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+
+
+                    <com.github.siyamed.shapeimageview.RoundedImageView
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/org4"
+                        android:src="@drawable/orga"
+                        app:siRadius="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#212121"
+                        app:siBorderWidth="0dp"
+                        app:siBorderColor="#212121"
+                        app:siSquare="true"/>
+
+
+                    <TextView
+
+                        android:layout_marginLeft="-13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ajay Athitya | Treasurer, ACE"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+
+               android:background="#000000"
+                android:layout_below="@id/ll4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Developers"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textView2" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:background="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/con_desc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.github.siyamed.shapeimageview.RoundedImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:id="@+id/dev1"
+                            android:src="@drawable/svce"
+                            app:siRadius="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:background="#000000"
+                            app:siBorderWidth="0dp"
+                            app:siBorderColor="#212121"
+                            app:siSquare="true"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="-13dp"
+                            android:textColor="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Saathvik | President, ACE"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.github.siyamed.shapeimageview.RoundedImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:id="@+id/dev2"
+                            android:src="@drawable/svce"
+                            app:siRadius="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:background="#000000"
+                            app:siBorderWidth="0dp"
+                            app:siBorderColor="#212121"
+                            app:siSquare="true"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="-13dp"
+                            android:textColor="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Saathvik | President, ACE"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.github.siyamed.shapeimageview.RoundedImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:id="@+id/dev3"
+                            android:src="@drawable/svce"
+                            app:siRadius="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:background="#000000"
+                            app:siBorderWidth="0dp"
+                            app:siBorderColor="#212121"
+                            app:siSquare="true"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="-13dp"
+                            android:textColor="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Saathvik | President, ACE"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+
+                        <com.github.siyamed.shapeimageview.RoundedImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:id="@+id/dev4"
+                            android:src="@drawable/svce"
+                            app:siRadius="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:background="#000000"
+                            app:siBorderWidth="0dp"
+                            app:siBorderColor="#212121"
+                            app:siSquare="true"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="-13dp"
+                            android:textColor="#ffffff"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Saathvik | President, ACE"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#000000"
+            android:id="@+id/titlelayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/intt"
+                android:layout_width="289dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/int_desc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/int_title"
+                android:text="SEPTEMBER 29TH.                                   SAVE THE DATE"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>

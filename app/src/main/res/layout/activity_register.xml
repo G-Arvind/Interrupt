@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.arvind.svceinterrupt.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interrupt"
+        android:layout_marginTop="5dp"
+        android:text="Sign Up"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:hint="Email"
+        android:textColorHint="#888888"
+        android:id="@+id/editText3" />
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:hint="Mobile Number"
+        android:textColorHint="#888888"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:hint="Name Of College"
+        android:textColorHint="#888888"
+        android:id="@+id/editText2" />
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:hint="Password"
+        android:textColorHint="#888888"/>
+
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:hint="Re-enter Password"
+        android:textColorHint="#888888"/>
+
+    <Button
+        android:id="@+id/angry_btn"
+        android:layout_gravity="center"
+        android:text="Sign up"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8734A"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+</LinearLayout>
+
+
