@@ -80,7 +80,7 @@ public class Home extends Fragment implements MyInterface {
         mailbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email[] = { "interrupt2k17@gmail.com" };
+                String email[] = { "interrupt2k18@gmail.com" };
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
                 emailIntent.setType("plain/text");
                 emailIntent.putExtra(Intent.EXTRA_EMAIL, email);

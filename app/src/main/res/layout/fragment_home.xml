@@ -442,10 +442,10 @@
 
 
                         <com.github.siyamed.shapeimageview.RoundedImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="100dp"
                             android:layout_height="120dp"
                             android:id="@+id/dev1"
-                            android:src="@drawable/svce"
+                            android:src="@drawable/arvind"
                             app:siRadius="20dp"
                             android:layout_marginLeft="25dp"
                             android:background="#000000"
@@ -459,7 +459,9 @@
                             android:textColor="#ffffff"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="Saathvik | President, ACE"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="Arvind G"
                             android:layout_weight="1"
                             android:textAlignment="center"/>
 
@@ -473,12 +475,13 @@
 
 
                         <com.github.siyamed.shapeimageview.RoundedImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="100dp"
                             android:layout_height="120dp"
                             android:id="@+id/dev2"
-                            android:src="@drawable/svce"
+                            android:src="@drawable/shiva"
                             app:siRadius="20dp"
                             android:layout_marginLeft="25dp"
+                            android:layout_gravity="center"
                             android:background="#000000"
                             app:siBorderWidth="0dp"
                             app:siBorderColor="#212121"
@@ -489,8 +492,9 @@
                             android:layout_marginLeft="-13dp"
                             android:textColor="#ffffff"
                             android:layout_width="0dp"
+                            android:layout_gravity="center"
                             android:layout_height="wrap_content"
-                            android:text="Saathvik | President, ACE"
+                            android:text="Shivaram G"
                             android:layout_weight="1"
                             android:textAlignment="center"/>
 
@@ -504,12 +508,13 @@
 
 
                         <com.github.siyamed.shapeimageview.RoundedImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="100dp"
                             android:layout_height="120dp"
                             android:id="@+id/dev3"
-                            android:src="@drawable/svce"
+                            android:src="@drawable/ssp"
                             app:siRadius="20dp"
                             android:layout_marginLeft="25dp"
+                            android:layout_gravity="center"
                             android:background="#000000"
                             app:siBorderWidth="0dp"
                             app:siBorderColor="#212121"
@@ -518,9 +523,10 @@
                             android:layout_marginTop="5dp"
                             android:layout_marginLeft="-13dp"
                             android:textColor="#ffffff"
+                            android:layout_gravity="center"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="Saathvik | President, ACE"
+                            android:text="Shanmugha Priyan S"
                             android:layout_weight="1"
                             android:textAlignment="center"/>
 
@@ -534,12 +540,13 @@
 
 
                         <com.github.siyamed.shapeimageview.RoundedImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="100dp"
                             android:layout_height="120dp"
                             android:id="@+id/dev4"
-                            android:src="@drawable/svce"
+                            android:src="@drawable/srinath"
                             app:siRadius="20dp"
                             android:layout_marginLeft="25dp"
+                            android:layout_gravity="center"
                             android:background="#000000"
                             app:siBorderWidth="0dp"
                             app:siBorderColor="#212121"
@@ -548,10 +555,11 @@
                         <TextView
                             android:layout_marginTop="5dp"
                             android:layout_marginLeft="-13dp"
+                            android:layout_gravity="center"
                             android:textColor="#ffffff"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="Saathvik | President, ACE"
+                            android:text="Srinath V S"
                             android:layout_weight="1"
                             android:textAlignment="center"/>
 

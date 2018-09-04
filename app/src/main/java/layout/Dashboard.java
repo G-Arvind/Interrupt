@@ -1,11 +1,7 @@
 package layout;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -14,21 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
 
 import com.example.arvind.svceinterrupt.EventActivity;
 import com.example.arvind.svceinterrupt.InstructionActivity;
 import com.example.arvind.svceinterrupt.MailInterface;
 import com.example.arvind.svceinterrupt.MyInterface;
 import com.example.arvind.svceinterrupt.R;
-import com.example.arvind.svceinterrupt.RegisterEvents;
 import com.example.arvind.svceinterrupt.TransportActivity;
-import com.example.arvind.svceinterrupt.registration;
-
-import java.util.Locale;
-
-import static android.R.attr.typeface;
+import com.example.arvind.svceinterrupt.Registration_Events;
 
 
 public class Dashboard extends Fragment implements MyInterface {
@@ -217,7 +206,7 @@ public class Dashboard extends Fragment implements MyInterface {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getContext(), registration.class);
+                Intent intent=new Intent(getContext(), Registration_Events.class);
                 startActivity(intent);
             }
         });

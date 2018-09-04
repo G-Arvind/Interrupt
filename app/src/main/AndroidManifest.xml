@@ -23,7 +23,7 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".RegisterEvents" />
         <activity android:name=".User_profile" />
-        <activity android:name=".registration"></activity>
+        <activity android:name=".Registration_Events"></activity>
     </application>
 
 </manifest>

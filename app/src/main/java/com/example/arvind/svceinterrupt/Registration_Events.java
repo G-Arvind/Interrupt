@@ -6,7 +6,7 @@ import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
 
-public class registration extends AppCompatActivity {
+public class Registration_Events extends AppCompatActivity {
     CardView flex,ichallenge,generic,terminal,logic,pitch,inquiz,ds,techno,ppt,tech,aws,pipe;
 
     Boolean flex1,ichallenge1,generic1,terminal1,logic1,pitch1,inquiz1,ds1,techno1,ppt1,tech1,aws1,pipe1;
