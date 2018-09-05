@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#212121"
-    android:orientation="vertical"
-    android:padding="10dp"
+    android:gravity="center"
+    android:id="@+id/ll"
     tools:context="com.example.arvind.svceinterrupt.RegisterActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical"
+    android:padding="10dp">
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,12 +37,27 @@
         android:background="@drawable/edittext"
         android:layout_gravity="center"
         android:textColor="#ffffff"
+        android:hint="Name"
+        android:textColorHint="#888888"
+        android:id="@+id/nameEditText" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
         android:hint="Email"
         android:textColorHint="#888888"
-        android:id="@+id/editText3" />
+        android:id="@+id/emailEditText" />
 
 
     <EditText
+        android:id="@+id/phoneEditText"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:inputType="textEmailAddress"
@@ -57,12 +80,13 @@
         android:background="@drawable/edittext"
         android:layout_gravity="center"
         android:textColor="#ffffff"
-        android:hint="Name Of College"
+        android:hint="Name of College"
         android:textColorHint="#888888"
-        android:id="@+id/editText2" />
+        android:id="@+id/collegeEditText" />
 
 
     <EditText
+        android:id="@+id/passEditText"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:inputType="textPassword"
@@ -91,7 +115,7 @@
         android:textColorHint="#888888"/>
 
     <Button
-        android:id="@+id/angry_btn"
+        android:id="@+id/registerButton"
         android:layout_gravity="center"
         android:text="Sign up"
         android:textColor="#FFFFFF"
@@ -107,5 +131,6 @@
         />
 
 </LinearLayout>
+</ScrollView>
 
 
