@@ -43,8 +43,8 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:src="@drawable/css"
                         android:padding="10dp"/>
                     <TextView
@@ -52,7 +52,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
-                        android:text="Flex Box Froggy"
+                        android:text="Art Attack"
                         android:textColor="#ffffff"/>
                     <View
                         android:layout_width="match_parent"
@@ -149,7 +149,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
-                        android:text="Generic Coding"
+                        android:text="Clash of Codes"
                         android:textColor="#ffffff"/>
                     <View
                         android:layout_width="match_parent"
@@ -246,7 +246,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
-                        android:text="Logician's Code"
+                        android:text="Logician's Code 2.0"
                         android:textColor="#ffffff"/>
                     <View
                         android:layout_width="match_parent"
@@ -442,7 +442,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
-                        android:text="Data Science"
+                        android:text="Datafication"
                         android:textColor="#ffffff"/>
                     <View
                         android:layout_width="match_parent"

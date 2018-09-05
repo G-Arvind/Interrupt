@@ -1,5 +1,6 @@
 package com.example.arvind.svceinterrupt;
 
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,8 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+
+import layout.Login;
 
 import static android.R.attr.typeface;
 
@@ -87,6 +90,10 @@ public class RegisterActivity extends AppCompatActivity {
                     //      .getString("created_at");
 
                     Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
+
+                    Intent intent=new Intent(RegisterActivity.this, Login.class);
+                    startActivity(intent);
+                    finish();
 
                     // Launch login activity
                     /*Intent intent = new Intent(

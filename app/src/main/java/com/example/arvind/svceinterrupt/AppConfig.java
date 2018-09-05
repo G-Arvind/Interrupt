@@ -13,4 +13,7 @@ public class AppConfig {
     // Server user register url
     public static String URL_REGISTER = "http://139.59.81.245/register/signup.php";
 
+    public static String URL_EVENTS = "http://139.59.81.245/login/eventsMobile.php";
+
+
 }

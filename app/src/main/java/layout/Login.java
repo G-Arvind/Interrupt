@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -14,6 +16,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +31,7 @@ import com.example.arvind.svceinterrupt.EventActivity;
 import com.example.arvind.svceinterrupt.InstructionActivity;
 import com.example.arvind.svceinterrupt.MailInterface;
 import com.example.arvind.svceinterrupt.MainActivity;
+import com.example.arvind.svceinterrupt.MobileNumber;
 import com.example.arvind.svceinterrupt.MyInterface;
 import com.example.arvind.svceinterrupt.R;
 import com.example.arvind.svceinterrupt.RegisterActivity;
@@ -44,6 +49,10 @@ public class Login extends Fragment implements MyInterface {
     EditText emailEditText, passwordEditText;
     Button loginButton;
     TextView toRegistration;
+
+    ScrollView scrollView;
+
+    public LinearLayout loginpage,profilepage;
 
 
 
@@ -64,12 +73,32 @@ public class Login extends Fragment implements MyInterface {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View rootView;
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.fragment_login, container, false);
-        signup=(TextView)rootView.findViewById(R.id.signup);
-        emailEditText = (EditText)rootView.findViewById(R.id.email);
-        passwordEditText = (EditText)rootView.findViewById(R.id.password);
-        loginButton = (Button)rootView.findViewById(R.id.login);
+
+             rootView = inflater.inflate(R.layout.fragment_login, container, false);
+
+            signup=(TextView)rootView.findViewById(R.id.signup);
+            emailEditText = (EditText)rootView.findViewById(R.id.email);
+            passwordEditText = (EditText)rootView.findViewById(R.id.password);
+            loginButton = (Button)rootView.findViewById(R.id.login);
+
+           loginpage = (LinearLayout)rootView.findViewById(R.id.login_page);
+           profilepage =(LinearLayout) rootView.findViewById(R.id.prof_page);
+
+        emailEditText.setText("");
+        passwordEditText.setText("");
+
+        if(MobileNumber.userMobileNumber.equals("dummy")){
+            profilepage.setVisibility(View.GONE);
+        }
+        else {
+            loginpage.setVisibility(View.GONE);
+            profilepage.setVisibility(View.VISIBLE);
+            scrollView.setVisibility(View.GONE);
+        }
+
+
 
 
 
@@ -119,8 +148,19 @@ public class Login extends Fragment implements MyInterface {
                    // session.setLogin(true);
                     String res = response.toString();
                     if(res.contains("window.location.href")){
+                        MobileNumber.userMobileNumber=phoneNumber;
                         Toast.makeText(getContext(), "success", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getContext(), Registration_Events.class));
+
+
+                        loginpage.setVisibility(View.GONE);
+                        profilepage.setVisibility(View.VISIBLE);
+                        scrollView.setVisibility(View.GONE);
+                        emailEditText.setText("");
+                        passwordEditText.setText("");
+
+                        //scrollView.setVisibility(View.GONE);
+                        emailEditText.setText("");
+                        passwordEditText.setText("");
                     }
                     else{
                         Toast.makeText(getContext(), "failed", Toast.LENGTH_SHORT).show();

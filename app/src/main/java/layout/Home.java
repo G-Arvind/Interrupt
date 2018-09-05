@@ -197,9 +197,6 @@ public class Home extends Fragment implements MyInterface {
 
             }
         });
-
-
-
         return v;
     }
     public String getFacebookPageURL(Context context) {

@@ -11,10 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import com.example.arvind.svceinterrupt.EventActivity;
 import com.example.arvind.svceinterrupt.InstructionActivity;
 import com.example.arvind.svceinterrupt.MailInterface;
+import com.example.arvind.svceinterrupt.MobileNumber;
 import com.example.arvind.svceinterrupt.MyInterface;
 import com.example.arvind.svceinterrupt.R;
 import com.example.arvind.svceinterrupt.TransportActivity;
@@ -210,8 +212,13 @@ public class Dashboard extends Fragment implements MyInterface {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getContext(), Registration_Events.class);
-                startActivity(intent);
+                if(MobileNumber.userMobileNumber.equals("dummy")){
+                    Toast.makeText(getContext(),"Login to Continue",Toast.LENGTH_LONG).show();
+                }
+                else {
+                    Intent intent = new Intent(getContext(), Registration_Events.class);
+                    startActivity(intent);
+                }
             }
         });
         return view;
