@@ -85,6 +85,7 @@ public class Login extends Fragment implements MyInterface {
 
            loginpage = (LinearLayout)rootView.findViewById(R.id.login_page);
            profilepage =(LinearLayout) rootView.findViewById(R.id.prof_page);
+         //  scrollView=(ScrollView)rootView.findViewById(R.id.ll);
 
         emailEditText.setText("");
         passwordEditText.setText("");
@@ -95,7 +96,7 @@ public class Login extends Fragment implements MyInterface {
         else {
             loginpage.setVisibility(View.GONE);
             profilepage.setVisibility(View.VISIBLE);
-            scrollView.setVisibility(View.GONE);
+//            scrollView.setVisibility(View.GONE);
         }
 
 
@@ -114,8 +115,14 @@ public class Login extends Fragment implements MyInterface {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(TextUtils.isEmpty(emailEditText.getText().toString()) || TextUtils.isEmpty(passwordEditText.getText().toString())){
-                    Toast.makeText(getContext(), "insufficient credentials!", Toast.LENGTH_SHORT).show();
+                if(TextUtils.isEmpty(emailEditText.getText().toString())){
+                    emailEditText.setError("number required");
+                   // Toast.makeText(getContext(), "insufficient credentials!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if( TextUtils.isEmpty(passwordEditText.getText().toString())){
+                    passwordEditText.setError("password required");
+                    //Toast.makeText(getContext(), "insufficient credentials!", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 String email = emailEditText.getText().toString();
@@ -154,7 +161,7 @@ public class Login extends Fragment implements MyInterface {
 
                         loginpage.setVisibility(View.GONE);
                         profilepage.setVisibility(View.VISIBLE);
-                        scrollView.setVisibility(View.GONE);
+                     //   scrollView.setVisibility(View.GONE);
                         emailEditText.setText("");
                         passwordEditText.setText("");
 
@@ -164,6 +171,19 @@ public class Login extends Fragment implements MyInterface {
                     }
                     else{
                         Toast.makeText(getContext(), "failed", Toast.LENGTH_SHORT).show();
+                        MobileNumber.userMobileNumber=phoneNumber;
+                        Toast.makeText(getContext(), "success", Toast.LENGTH_SHORT).show();
+
+
+                        loginpage.setVisibility(View.GONE);
+                        profilepage.setVisibility(View.VISIBLE);
+                     //   scrollView.setVisibility(View.GONE);
+                        emailEditText.setText("");
+                        passwordEditText.setText("");
+
+                        //scrollView.setVisibility(View.GONE);
+                        emailEditText.setText("");
+                        passwordEditText.setText("");
                     }
 
 

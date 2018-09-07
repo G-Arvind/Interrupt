@@ -167,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
             }
         }
 
+
         @Override
         public int getCount() {
             return 3;

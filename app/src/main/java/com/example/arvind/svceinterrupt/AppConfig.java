@@ -8,12 +8,12 @@ public class AppConfig {
 
     // Server user login url
     //public static String URL_LOGIN = "http://192.168.1.6:8888/android_login_api/login.php";
-    public static String URL_LOGIN = "http://139.59.81.245/login/index.php";
+    public static String URL_LOGIN = "http://159.65.154.83/login/index.php";
 
     // Server user register url
-    public static String URL_REGISTER = "http://139.59.81.245/register/signup.php";
+    public static String URL_REGISTER = "http://159.65.154.83/register/signup.php";
 
-    public static String URL_EVENTS = "http://139.59.81.245/login/eventsMobile.php";
+    public static String URL_EVENTS = "http://159.65.154.83/login/eventsMobile.php";
 
 
 }

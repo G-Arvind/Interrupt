@@ -16,11 +16,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Registration_Events extends AppCompatActivity {
-    CardView flex, ichallenge, generic, terminal, logic, pitch, inquiz, ds, techno, ppt, tech, aws, pipe;
+    CardView flex, ichallenge, generic, terminal, logic, pitch, inquiz, ds, techno, ppt, aws, pipe;
 
-    Boolean flex1, ichallenge1, generic1, terminal1, logic1, pitch1, inquiz1, ds1, techno1, ppt1, tech1, aws1, pipe1;
+    Boolean flex1, ichallenge1, generic1, terminal1, logic1, pitch1, inquiz1, ds1, techno1, ppt1, aws1, pipe1;
 
-    int i;
+int i=0;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class Registration_Events extends AppCompatActivity {
         ds1 = false;
         techno1 = false;
         ppt1 = false;
-        tech1 = false;
+
         aws1 = false;
         pipe1 = false;
 
@@ -51,7 +51,7 @@ public class Registration_Events extends AppCompatActivity {
         ds = (CardView) findViewById(R.id.dse);
         techno = (CardView) findViewById(R.id.technoe);
         ppt = (CardView) findViewById(R.id.ppte);
-        tech = (CardView) findViewById(R.id.teche);
+
         pipe = (CardView) findViewById(R.id.pipee);
         aws = (CardView) findViewById(R.id.awse);
 
@@ -61,18 +61,18 @@ public class Registration_Events extends AppCompatActivity {
             public void onClick(View view) {
                 if (flex1 == false){
                     flex1 = true;
-                    EventsArray.array[3] = 1;
+                    EventsArray.array[0] = 1;
                 }
                 else{
                     flex1 = false;
-                    EventsArray.array[3] = 0;
+                    EventsArray.array[0] = 0;
                 }
 
                 if (flex1 == true) {
                     Log.v("TAG", "EXEC");
                     flex.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    flex.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    flex.setBackgroundColor(getResources().getColor(R.color.black));
                 }
 
 
@@ -84,17 +84,17 @@ public class Registration_Events extends AppCompatActivity {
 
                 if (ichallenge1 == false){
                     ichallenge1 = true;
-                    EventsArray.array[i] = 1;
+                    EventsArray.array[1] = 1;
                 }
                 else{
                     ichallenge1 = false;
-                    EventsArray.array[i] = 0;
+                    EventsArray.array[1] = 0;
                 }
 
                 if (ichallenge1 == true) {
                     ichallenge.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    ichallenge.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    ichallenge.setBackgroundColor(getResources().getColor(R.color.black));
                 }
             }
         });
@@ -113,7 +113,7 @@ public class Registration_Events extends AppCompatActivity {
                 if (generic1 == true) {
                     generic.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    generic.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    generic.setBackgroundColor(getResources().getColor(R.color.black));
                 }
 
 
@@ -134,7 +134,7 @@ public class Registration_Events extends AppCompatActivity {
                 if (terminal1 == true) {
                     terminal.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    terminal.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    terminal.setBackgroundColor(getResources().getColor(R.color.black));
                 }
 
 
@@ -155,7 +155,7 @@ public class Registration_Events extends AppCompatActivity {
                 if (logic1 == true) {
                     logic.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    logic.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    logic.setBackgroundColor(getResources().getColor(R.color.black));
                 }
 
             }
@@ -175,7 +175,7 @@ public class Registration_Events extends AppCompatActivity {
                 if (pitch1 == true) {
                     pitch.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    pitch.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    pitch.setBackgroundColor(getResources().getColor(R.color.black));
                 }
 
 
@@ -197,7 +197,7 @@ public class Registration_Events extends AppCompatActivity {
                 if (inquiz1 == true) {
                     inquiz.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    inquiz.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    inquiz.setBackgroundColor(getResources().getColor(R.color.black));
                 }
             }
         });
@@ -217,7 +217,7 @@ public class Registration_Events extends AppCompatActivity {
                 if (ds1 == true) {
                     ds.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    ds.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    ds.setBackgroundColor(getResources().getColor(R.color.black));
                 }
             }
         });
@@ -234,10 +234,10 @@ public class Registration_Events extends AppCompatActivity {
                     techno1 = false;
                 }
 
-                if (flex1 == true) {
+                if (techno1 == true) {
                     techno.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    techno.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    techno.setBackgroundColor(getResources().getColor(R.color.black));
                 }
             }
         });
@@ -257,30 +257,11 @@ public class Registration_Events extends AppCompatActivity {
                 if (ppt1 == true) {
                     ppt.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    ppt.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    ppt.setBackgroundColor(getResources().getColor(R.color.black));
                 }
             }
         });
-        tech.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                if (tech1 == false){
-                    EventsArray.array[i] = 1;
-                    tech1 = true;
-                }
-                else{
-                    tech1 = false;
-                    EventsArray.array[i] = 0;
-                }
-
-                if (tech1 == true) {
-                    tech.setBackgroundColor(getResources().getColor(R.color.gray));
-                } else {
-                    tech.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                }
-            }
-        });
         pipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -297,7 +278,7 @@ public class Registration_Events extends AppCompatActivity {
                 if (pipe1 == true) {
                     pipe.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    pipe.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    pipe.setBackgroundColor(getResources().getColor(R.color.black));
                 }
             }
         });
@@ -317,7 +298,7 @@ public class Registration_Events extends AppCompatActivity {
                 if (aws1 == true) {
                     aws.setBackgroundColor(getResources().getColor(R.color.gray));
                 } else {
-                    aws.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    aws.setBackgroundColor(getResources().getColor(R.color.black));
                 }
             }
         });

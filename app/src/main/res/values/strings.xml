@@ -1,15 +1,25 @@
 <resources>
-    <string name="app_name">SVCEInterrupt</string>
+    <string name="app_name">Interrupt 18</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name = "art_attack">
- 1. Individual participation.\n
+    <string name="art_attack">
+  1. Individual participation.\n
 2. There will be a pen and paper prelims.\n
 3. Final round will require participants to build their own website based on the given theme.\n
 4. Internet access will be allowed for reference.\n
 5. Copying an existing website is strictly prohibited and will lead to disqualification.\n
 </string>
-    <string name="instruct">1. All the participants must have their college ID card with them at all times.\n\n2. The participants must follow the dress code as per Anna University rules. Any violation may result in denial of registration.\n\n3. Private vehicles must be parked at the parking space provided.\n\n4. While inside the campus, please adhere to the rules and regulations provided by the management.\n\n5. Refrain from arguing or fighting with the organisers. We are, after all, here to help you have a pleasant experience.\n\n6. Participants must register before attending the symposium.\n\n7. Lunch will not be provided by the organisers.</string>
+    <string name="instruct"> 1. The symposium is on September 29th, 2018.\n\n
+2. There is no registration fee.\n\n
+3. Only College students can attend and college ID card is a must.\n\n
+4. Dress code: Strictly adhere to the dress code given below.\n\n
+Boys: NO T-SHIRTS or SHORTS.\n\n
+Girls: SALWAR WITH DUPUTTA\n\n
+5. Events commences at 8.30 am and will close by 3.30 pm.\n\n
+6. SVCE College transport can be used and you can check the bus
+number and routes from the Transport tab in the official Interrupt
+app and website.
+</string>
 
 </resources>

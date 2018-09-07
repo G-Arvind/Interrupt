@@ -48,6 +48,7 @@
                         android:src="@drawable/css"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -60,6 +61,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -92,6 +94,7 @@
                         android:src="@drawable/b4"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -104,6 +107,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -145,6 +149,7 @@
                         android:src="@drawable/code"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -157,6 +162,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -189,6 +195,7 @@
                         android:src="@drawable/terminal"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -201,6 +208,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -242,6 +250,7 @@
                         android:src="@drawable/logical"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -254,6 +263,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -286,6 +296,7 @@
                         android:src="@drawable/marketing"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -298,6 +309,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -340,6 +352,7 @@
                         android:src="@drawable/quiz"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -352,6 +365,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -384,6 +398,7 @@
                         android:src="@drawable/code2"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -396,6 +411,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -438,6 +454,7 @@
                         android:src="@drawable/analytics"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -450,6 +467,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -484,6 +502,7 @@
                         android:src="@drawable/techcrunch"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -496,6 +515,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -538,6 +558,7 @@
                         android:src="@drawable/present"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -550,6 +571,7 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -560,14 +582,15 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
+
             <android.support.v7.widget.CardView
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
+                android:id="@+id/aws"
                 android:layout_width="160dp"
                 app:cardCornerRadius="10dp"
                 android:layout_height="190dp"
                 app:cardBackgroundColor="#000000"
-                android:id="@+id/tech"
                 app:cardPreventCornerOverlap="true"
                 android:layout_margin="10dp">
                 <LinearLayout
@@ -579,14 +602,15 @@
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/project"
+                        android:src="@drawable/workshop"
                         android:padding="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
-                        android:text="Tech Crunch"
+                        android:text="Workshop"
                         android:textColor="#ffffff"/>
                     <View
                         android:layout_width="match_parent"
@@ -594,64 +618,25 @@
                         android:background="@color/lightgray"
                         android:layout_margin="10dp"/>
                     <TextView
+                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="A mini project event"
+                        android:text="An AWS workshop"
                         android:padding="5dp"
                         android:textColor="#ffffff"/>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
+
+
         </LinearLayout>
 
-        <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:id="@+id/aws"
-            android:layout_width="320dp"
-            app:cardCornerRadius="10dp"
-            android:layout_height="190dp"
-            app:cardBackgroundColor="#000000"
-            app:cardPreventCornerOverlap="true"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/ripple"
-                android:orientation="vertical"
-                android:gravity="center">
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/workshop"
-                    android:padding="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:text="Workshop"
-                    android:textColor="#ffffff"/>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/lightgray"
-                    android:layout_margin="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="An AWS workshop"
-                    android:padding="5dp"
-                    android:textColor="#ffffff"/>
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
 
 
         <Button
+            android:fontFamily="@font/monts"
             android:id="@+id/register"
             android:textColorHint="#ffffff"
             android:layout_gravity="center"
@@ -668,6 +653,7 @@
             android:shadowRadius="5"
             />
         <Button
+            android:fontFamily="@font/monts"
             android:id="@+id/transport"
             android:textColorHint="#ffffff"
             android:layout_gravity="center"
@@ -684,6 +670,7 @@
             android:shadowRadius="5"
             />
         <Button
+            android:fontFamily="@font/monts"
             android:id="@+id/instruct"
             android:textColorHint="#ffffff"
             android:layout_gravity="center"

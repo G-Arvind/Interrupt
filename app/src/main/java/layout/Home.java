@@ -7,12 +7,14 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.arvind.svceinterrupt.MyInterface;
 import com.example.arvind.svceinterrupt.R;
@@ -23,6 +25,7 @@ public class Home extends Fragment implements MyInterface {
 
 
     ImageButton fbbutton,instabutton,mailbutton,webbutton;
+    TextView textView;
 
     RoundedImageView org1,org2,org3,org4,dev1,dev2,dev3,dev4;
 
@@ -53,6 +56,10 @@ public class Home extends Fragment implements MyInterface {
         dev2=(RoundedImageView)v.findViewById(R.id.dev2);
         dev3=(RoundedImageView)v.findViewById(R.id.dev3);
         dev4=(RoundedImageView)v.findViewById(R.id.dev4);
+
+        textView=(TextView)v.findViewById(R.id.int_desc);
+
+        textView.setText(Html.fromHtml("29<sup>th</sup> SEPTEMBER"));
 
 
         fbbutton.setOnClickListener(new View.OnClickListener() {

@@ -25,7 +25,7 @@ import com.example.arvind.svceinterrupt.Registration_Events;
 
 public class Dashboard extends Fragment implements MyInterface {
 
-   CardView flex,ichallenge,generic,terminal,logic,pitch,inquiz,ds,techno,ppt,tech,aws,pipe;
+   CardView flex,ichallenge,generic,terminal,logic,pitch,inquiz,ds,techno,ppt,aws,pipe;
 
     MailInterface mailInterface;
 
@@ -68,7 +68,7 @@ public class Dashboard extends Fragment implements MyInterface {
         ds=(CardView)view.findViewById(R.id.ds);
         techno=(CardView)view.findViewById(R.id.techno);
         ppt=(CardView)view.findViewById(R.id.ppt);
-        tech=(CardView)view.findViewById(R.id.tech);
+
         pipe=(CardView)view.findViewById(R.id.pipe);
         aws=(CardView)view.findViewById(R.id.aws);
         transport=(Button) view.findViewById(R.id.transport);
@@ -166,15 +166,7 @@ public class Dashboard extends Fragment implements MyInterface {
                 startActivity(intent);
             }
         });
-        tech.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent intent=new Intent(getActivity(), EventActivity.class);
-                intent.putExtra("name","tech");
-                startActivity(intent);
-            }
-        });
         pipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

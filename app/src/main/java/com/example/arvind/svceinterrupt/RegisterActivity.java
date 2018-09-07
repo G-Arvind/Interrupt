@@ -28,7 +28,7 @@ import static android.R.attr.typeface;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText emailEditText, passEditText, nameEditText,collegeEditText,phoneEditText;
+    EditText emailEditText, passEditText, nameEditText,collegeEditText,phoneEditText,repass;
     Button registerButton;
     TextView toLogin;
 
@@ -43,13 +43,41 @@ public class RegisterActivity extends AppCompatActivity {
         nameEditText= (EditText)findViewById(R.id.nameEditText);
         collegeEditText= (EditText)findViewById(R.id.collegeEditText);
         phoneEditText= (EditText)findViewById(R.id.phoneEditText);
+        repass= (EditText)findViewById(R.id.repass);
         registerButton = (Button)findViewById(R.id.registerButton);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(TextUtils.isEmpty(emailEditText.getText().toString()) || TextUtils.isEmpty(passEditText.getText().toString())){
-                    Toast.makeText(getApplicationContext(), "insufficient credentials!", Toast.LENGTH_SHORT).show();
+
+                if(TextUtils.isEmpty(nameEditText.getText().toString())) {
+                    nameEditText.setError("name required");
+                    return;
+                }
+                if(TextUtils.isEmpty(emailEditText.getText().toString()) ){
+                    emailEditText.setError("email required");
+                    //Toast.makeText(getApplicationContext(), "insufficient credentials", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(TextUtils.isEmpty(phoneEditText.getText().toString()) ){
+                    phoneEditText.setError("number required");
+                    //Toast.makeText(getApplicationContext(), "insufficient credentials", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(TextUtils.isEmpty(collegeEditText.getText().toString()) ){
+                    collegeEditText.setError("college required");
+                    //Toast.makeText(getApplicationContext(), "insufficient credentials", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(TextUtils.isEmpty(passEditText.getText().toString()) ){
+                    passEditText.setError("password required");
+                    //Toast.makeText(getApplicationContext(), "insufficient credentials", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+
+                if(passEditText.getText().toString()!=repass.getText().toString()){
+                    Toast.makeText(getApplicationContext(), "password doesn't match", Toast.LENGTH_SHORT).show();
                     return;
                 }
 

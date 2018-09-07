@@ -31,6 +31,7 @@
 
 
             <TextView
+                android:fontFamily="@font/monts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MOBILE NUMBER"
@@ -41,6 +42,7 @@
                 />
 
             <EditText
+                android:fontFamily="@font/monts"
                 android:id="@+id/email"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
@@ -55,6 +57,7 @@
 
 
             <TextView
+                android:fontFamily="@font/monts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/PASS"
@@ -65,6 +68,7 @@
                 android:layout_marginTop="20dp"/>
 
             <EditText
+                android:fontFamily="@font/monts"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:inputType="textPassword"
@@ -77,6 +81,7 @@
                 android:id="@+id/password" />
 
             <Button
+                android:fontFamily="@font/monts"
                 android:id="@+id/login"
                 android:layout_gravity="center"
                 android:text="Login"
@@ -94,6 +99,7 @@
                 />
 
             <TextView
+                android:fontFamily="@font/monts"
                 android:id="@+id/signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,27 +116,30 @@
 
 
         <LinearLayout
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:id="@+id/prof_page"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
+                android:fontFamily="@font/monts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="USER INFORMATION"
-                android:fontFamily="monospace"
                 android:textStyle="bold"
                 android:textSize="25dp"
                 android:gravity="center"/>
 
             <TextView
+                android:fontFamily="@font/monts"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="USERNAME"
-                android:fontFamily="monospace"
                 android:textStyle="bold"
                 android:textSize="25dp"
                 android:gravity="center"/>
@@ -146,7 +155,7 @@
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:text="COLLEGE:"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/monts"
                     android:textStyle="bold"
                     android:textSize="15dp"
                     />
@@ -159,7 +168,7 @@
                     android:textAllCaps="true"
                     android:id="@+id/college"
                     android:textSize="15dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/monts"
                     />
 
 
@@ -176,7 +185,7 @@
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:text="YEAR   :"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/monts"
                     android:textStyle="bold"
                     android:textSize="15dp"
                     android:id="@+id/textView4" />
@@ -189,7 +198,7 @@
                     android:textAllCaps="true"
                     android:id="@+id/year"
                     android:textSize="15dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/monts"
                     />
 
             </LinearLayout>
@@ -205,7 +214,7 @@
                     android:layout_height="wrap_content"
                     android:text="CONTACT:
   NO   "
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/monts"
                     android:textStyle="bold"
                     android:textSize="15dp"
                     android:id="@+id/textView5" />
@@ -218,7 +227,7 @@
                     android:textAllCaps="true"
                     android:id="@+id/phno"
                     android:textSize="15dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/monts"
                     />
 
 
@@ -235,7 +244,7 @@
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:text="EMAIL  :"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/monts"
                     android:textStyle="bold"
                     android:textSize="15dp"
                     android:id="@+id/textView6" />
@@ -246,7 +255,7 @@
                     android:text=""
                     android:id="@+id/profemail"
                     android:textSize="15dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/monts"
                     />
 
             </LinearLayout>
@@ -257,7 +266,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="EVENTS REGISTERED"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/monts"
                 android:textStyle="bold"
                 android:textSize="25dp"
                 android:gravity="center"/>
