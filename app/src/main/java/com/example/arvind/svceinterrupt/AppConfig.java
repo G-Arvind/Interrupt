@@ -15,5 +15,7 @@ public class AppConfig {
 
     public static String URL_EVENTS = "http://159.65.154.83/login/eventsMobile.php";
 
+    public static String URL_FETCH = "http://159.65.154.83/login/sample.php";
+
 
 }

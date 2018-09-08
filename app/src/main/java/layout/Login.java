@@ -69,6 +69,8 @@ public class Login extends Fragment implements MyInterface {
 
     public LinearLayout loginpage,profilepage;
 
+    String tag_string_req = "req_login_fetch";
+
 
 
 
@@ -283,16 +285,58 @@ public class Login extends Fragment implements MyInterface {
         dcollege.setText("");
         dnum.setText(number);
         demail.setText("");
+
+
+
+
+
+        StringRequest strReq = new StringRequest(Request.Method.POST,
+                AppConfig.URL_FETCH, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                Log.d("TAG", "Login Response: " + response.toString());
+                try {
+
+                    //response will be a list
+                }
+
+             catch (Exception e) {
+                // JSON error
+                e.printStackTrace();
+                Toast.makeText(getContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+            }
+
+        }
+    }, new Response.ErrorListener() {
+
+        @Override
+        public void onErrorResponse(VolleyError error) {
+            Log.e("TAG", "Login Error: " + error.getMessage());
+            Toast.makeText(getContext(),
+                    error.getMessage(), Toast.LENGTH_LONG).show();
+
+        }
+    }) {
+
+        @Override
+        protected Map<String, String> getParams() {
+            // Posting parameters to login url
+            Map<String, String> params = new HashMap<String, String>();
+            params.put("mobile", MobileNumber.userMobileNumber);
+            return params;
+        }
+
+    };
+
+    // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+
     }
-
-
-
-
     @Override
     public void fragmentNowVisible() {
         Log.d("Debug", "Login visible");
     }
-
 
     }
 
