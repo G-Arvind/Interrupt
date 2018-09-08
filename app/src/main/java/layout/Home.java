@@ -104,7 +104,7 @@ public class Home extends Fragment implements MyInterface {
         webbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.http://interrupt2k18.in/"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://interrupt2k18.in/"));
                 startActivity(browserIntent);
 
             }

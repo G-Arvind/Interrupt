@@ -2,13 +2,19 @@ package layout;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +23,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -52,6 +59,14 @@ public class Login extends Fragment implements MyInterface {
 
     ScrollView scrollView;
 
+    CardView power;
+    TextView dusername,dcollege,dnum,demail;
+
+    ListView reglist;
+
+    View rootView;
+
+
     public LinearLayout loginpage,profilepage;
 
 
@@ -73,15 +88,18 @@ public class Login extends Fragment implements MyInterface {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView;
+
         // Inflate the layout for this fragment
 
              rootView = inflater.inflate(R.layout.fragment_login, container, false);
 
-            signup=(TextView)rootView.findViewById(R.id.signup);
+
+
+        signup=(TextView)rootView.findViewById(R.id.signup);
             emailEditText = (EditText)rootView.findViewById(R.id.email);
             passwordEditText = (EditText)rootView.findViewById(R.id.password);
             loginButton = (Button)rootView.findViewById(R.id.login);
+        power = (CardView)rootView.findViewById(R.id.signout);
 
            loginpage = (LinearLayout)rootView.findViewById(R.id.login_page);
            profilepage =(LinearLayout) rootView.findViewById(R.id.prof_page);
@@ -96,11 +114,36 @@ public class Login extends Fragment implements MyInterface {
         else {
             loginpage.setVisibility(View.GONE);
             profilepage.setVisibility(View.VISIBLE);
+            setdetails(MobileNumber.userMobileNumber);
 //            scrollView.setVisibility(View.GONE);
         }
 
 
+        power.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AlertDialog.Builder(getContext())
+                        .setTitle("Alert!")
+                        .setMessage("Signout")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                MobileNumber.userMobileNumber="dummy";
+                                profilepage.setVisibility(View.GONE);
+                                loginpage.setVisibility(View.VISIBLE);
+                                //   scrollView.setVisibility(View.GONE);
+                                emailEditText.setText("");
+                                passwordEditText.setText("");
+                            }
+
+                        })
+                        .show();
+
+
+
+            }
+        });
 
 
 
@@ -118,6 +161,11 @@ public class Login extends Fragment implements MyInterface {
                 if(TextUtils.isEmpty(emailEditText.getText().toString())){
                     emailEditText.setError("number required");
                    // Toast.makeText(getContext(), "insufficient credentials!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if((emailEditText.getText().toString().length()!=10)){
+                    emailEditText.setError("Invalid Mobile number");
+                    //Toast.makeText(getApplicationContext(), "insufficient credentials", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if( TextUtils.isEmpty(passwordEditText.getText().toString())){
@@ -168,22 +216,24 @@ public class Login extends Fragment implements MyInterface {
                         //scrollView.setVisibility(View.GONE);
                         emailEditText.setText("");
                         passwordEditText.setText("");
+                        setdetails(MobileNumber.userMobileNumber);
                     }
                     else{
-                        Toast.makeText(getContext(), "failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Invalid details", Toast.LENGTH_SHORT).show();
                         MobileNumber.userMobileNumber=phoneNumber;
-                        Toast.makeText(getContext(), "success", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(getContext(), "success", Toast.LENGTH_SHORT).show();
 
 
-                        loginpage.setVisibility(View.GONE);
-                        profilepage.setVisibility(View.VISIBLE);
+                      //  loginpage.setVisibility(View.GONE);
+                     //   profilepage.setVisibility(View.VISIBLE);
                      //   scrollView.setVisibility(View.GONE);
-                        emailEditText.setText("");
-                        passwordEditText.setText("");
+                      //  emailEditText.setText("");
+                        //passwordEditText.setText("");
 
                         //scrollView.setVisibility(View.GONE);
-                        emailEditText.setText("");
-                        passwordEditText.setText("");
+                      //  emailEditText.setText("");
+                      //  passwordEditText.setText("");
+                      //  setdetails(MobileNumber.userMobileNumber);
                     }
 
 
@@ -219,7 +269,22 @@ public class Login extends Fragment implements MyInterface {
 
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+
+
     }
+    void  setdetails(String number){
+        dusername=(TextView)rootView.findViewById(R.id.dusername);
+        dcollege=(TextView)rootView.findViewById(R.id.dcollege);
+        dnum=(TextView)rootView.findViewById(R.id.dnum);
+        demail=(TextView)rootView.findViewById(R.id.demail);
+        reglist=(ListView)rootView.findViewById(R.id.reglist);
+
+        dusername.setText("");
+        dcollege.setText("");
+        dnum.setText(number);
+        demail.setText("");
+    }
+
 
 
 
@@ -229,8 +294,8 @@ public class Login extends Fragment implements MyInterface {
     }
 
 
-
     }
+
 
 
 

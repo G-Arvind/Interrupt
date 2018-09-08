@@ -169,7 +169,7 @@ public class EventActivity extends AppCompatActivity {
             eventname.setText("Presentation Hub");
             eventdetails.setText("Pen down your innovative ideas.\n\n" +
                     "Explain your idea and submit your paper, if you will. \n \n" +
-                    "Impress our judges\n" +
+                    "Impress our judges\n\n" +
                     "Bag the prize!\n" +
                     "\n\n" +
                     "Welcome to INTERRUPT’s Presentation Hub, where your ideas matter.\n\n" +

@@ -23,7 +23,7 @@ public class Splash extends AwesomeSplash {
         //  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         configSplash.setBackgroundColor(R.color.colorPrimary);
-        configSplash.setAnimCircularRevealDuration(1100);
+        configSplash.setAnimCircularRevealDuration(1000);
         configSplash.setRevealFlagX(Flags.REVEAL_LEFT);
         configSplash.setRevealFlagY(Flags.REVEAL_BOTTOM);
 
@@ -36,9 +36,9 @@ public class Splash extends AwesomeSplash {
         configSplash.setOriginalWidth(10);
 
 
-        configSplash.setTitleSplash("Interrupt 18");
+        configSplash.setTitleSplash("Interrupt'18");
         configSplash.setTitleTextColor(R.color.colorPrimaryDark);
-        configSplash.setAnimTitleDuration(1500);
+        configSplash.setAnimTitleDuration(1000);
         configSplash.setTitleFont("fonts/monts.ttf");
         // configSplash.setTitleFont(getString(R.string.Font));
         configSplash.setTitleTextSize(30f);
