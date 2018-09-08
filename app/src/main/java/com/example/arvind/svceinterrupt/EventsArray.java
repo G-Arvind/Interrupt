@@ -5,5 +5,5 @@ package com.example.arvind.svceinterrupt;
  */
 
 public class EventsArray {
-   static int[] array = new int[10];
+   static int[] array = new int[12];
 }

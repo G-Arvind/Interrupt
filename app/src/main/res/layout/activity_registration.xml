@@ -65,7 +65,7 @@
                         android:textStyle="bold"
                         android:textSize="10dp"
                         android:layout_marginTop="5dp"
-                        android:text="Flex Box Froggy"
+                        android:text="Art Attack"
                         android:textColor="#ffffff"/>
 
 
@@ -139,7 +139,7 @@
                         android:textStyle="bold"
                         android:textSize="10dp"
                         android:layout_marginTop="10dp"
-                        android:text="Generic Coding"
+                        android:text="Clash of Code"
                         android:textColor="#ffffff"/>
 
 
@@ -220,13 +220,14 @@
                         android:src="@drawable/logical"
                         android:padding="10dp"/>
                     <TextView
+                        android:gravity="center"
                         android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textSize="10dp"
                         android:layout_marginTop="10dp"
-                        android:text="Logician's Code"
+                        android:text="Logician's Code 2.0"
                      android:textColor="#ffffff"/>
 
 
@@ -379,7 +380,7 @@
                         android:textStyle="bold"
                         android:textSize="10dp"
                         android:layout_marginTop="10dp"
-                        android:text="Data Science"
+                        android:text="Datafication"
                         android:textColor="#ffffff"/>
 
                 </LinearLayout>
@@ -514,7 +515,7 @@
 
         <Button
             android:fontFamily="@font/monts"
-            android:id="@+id/register"
+            android:id="@+id/regevent"
             android:textColorHint="#ffffff"
             android:layout_gravity="center"
             android:hint="Register"
