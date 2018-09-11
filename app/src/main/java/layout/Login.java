@@ -45,6 +45,8 @@ import com.example.arvind.svceinterrupt.RegisterActivity;
 import com.example.arvind.svceinterrupt.Registration_Events;
 
 
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -52,7 +54,7 @@ import java.util.Map;
 public class Login extends Fragment implements MyInterface {
 
     TextView signup;
-
+    String emailOfUser="", collegeName="",usernameValue="";
     EditText emailEditText, passwordEditText;
     Button loginButton;
     TextView toRegistration;
@@ -60,9 +62,8 @@ public class Login extends Fragment implements MyInterface {
     ScrollView scrollView;
 
     CardView power;
-    TextView dusername,dcollege,dnum,demail;
+    TextView dusername,dcollege,dnum,demail,reglist;
 
-    ListView reglist;
 
     View rootView;
 
@@ -101,6 +102,7 @@ public class Login extends Fragment implements MyInterface {
             emailEditText = (EditText)rootView.findViewById(R.id.email);
             passwordEditText = (EditText)rootView.findViewById(R.id.password);
             loginButton = (Button)rootView.findViewById(R.id.login);
+        reglist=(TextView) rootView.findViewById(R.id.reglist);
         power = (CardView)rootView.findViewById(R.id.signout);
 
            loginpage = (LinearLayout)rootView.findViewById(R.id.login_page);
@@ -119,6 +121,16 @@ public class Login extends Fragment implements MyInterface {
             setdetails(MobileNumber.userMobileNumber);
 //            scrollView.setVisibility(View.GONE);
         }
+
+        reglist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(),Registration_Events.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
         power.setOnClickListener(new View.OnClickListener() {
@@ -274,31 +286,30 @@ public class Login extends Fragment implements MyInterface {
 
 
     }
-    void  setdetails(String number){
+    void  setdetails( final String number){
         dusername=(TextView)rootView.findViewById(R.id.dusername);
         dcollege=(TextView)rootView.findViewById(R.id.dcollege);
         dnum=(TextView)rootView.findViewById(R.id.dnum);
         demail=(TextView)rootView.findViewById(R.id.demail);
-        reglist=(ListView)rootView.findViewById(R.id.reglist);
-
-        dusername.setText("");
-        dcollege.setText("");
-        dnum.setText(number);
-        demail.setText("");
-
-
-
 
 
         StringRequest strReq = new StringRequest(Request.Method.POST,
-                AppConfig.URL_FETCH, new Response.Listener<String>() {
+                AppConfig.URL_FETCH_DETAILS, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
-                Log.d("TAG", "Login Response: " + response.toString());
+                Log.d("TAG", "Login Response: " + response);
                 try {
 
-                    //response will be a list
+                    JSONObject jsonObject = new JSONObject(response);
+                    emailOfUser = jsonObject.getString("email");
+                    collegeName = jsonObject.getString("college");
+                    usernameValue = jsonObject.getString("name");
+
+                    dusername.setText(usernameValue);
+                    dcollege.setText(collegeName);
+                    dnum.setText(MobileNumber.userMobileNumber);
+                    demail.setText(emailOfUser);
                 }
 
              catch (Exception e) {

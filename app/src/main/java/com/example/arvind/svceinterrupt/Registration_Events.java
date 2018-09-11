@@ -1,5 +1,6 @@
 package com.example.arvind.svceinterrupt;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -13,6 +14,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,12 +27,15 @@ public class Registration_Events extends AppCompatActivity {
 
     Button regevent;
 
+    JSONObject jsonObject =null;
 
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+
+        //enrolledEvents();
 
         flex1 = false;
         ichallenge1 = false;
@@ -61,6 +68,9 @@ public class Registration_Events extends AppCompatActivity {
         regevent = (Button) findViewById(R.id.regevent);
 
       //  EventsArray.array[12] = 0;
+
+        //highlighting enrolled events
+
 
 
         flex.setOnClickListener(new View.OnClickListener() {
@@ -345,6 +355,11 @@ public class Registration_Events extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),
                             "Successfully Registered", Toast.LENGTH_LONG).show();
 
+                    Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                    intent.putExtra("position", 2);
+                    startActivity(intent);
+                    finish();
+
 
                 } catch (Exception e) {
                     // JSON error
@@ -381,5 +396,156 @@ public class Registration_Events extends AppCompatActivity {
         AppController.getInstance().addToRequestQueue(strReq);
 
 
+    }
+
+    private void enrolledEvents(){
+        // Tag used to cancel the request
+        String tag_enrolled = "tag_enrolled";
+
+
+        Log.d("TAG", "REGG CLICKED " );
+
+
+        StringRequest strReq = new StringRequest(Request.Method.POST,
+                AppConfig.URL_ENROLLED, new Response.Listener<String>() {
+
+
+            @Override
+            public void onResponse(String response) {
+                Log.d("TAG", "Login Response: " + response.toString());
+
+                //response is a html page
+                //if success move to main activity of the app
+                try {
+
+                    //create a login session
+                    Toast.makeText(getApplicationContext(),
+                            "Successfully Registered", Toast.LENGTH_LONG).show();
+
+                    JSONObject jsonObject = new JSONObject(response);
+                    //highlight(jsonObject);
+
+
+                } catch (Exception e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("TAG", "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("mobile", MobileNumber.userMobileNumber);
+                Log.d("TAG","mobile: "+MobileNumber.userMobileNumber);
+                for (int i = 1; i <= EventsArray.array.length; i++) {
+                    params.put("event" + i, EventsArray.array[i-1] +"");
+                    Log.d("TAG","event"+ i+":"+EventsArray.array[i-1] +"");
+                }
+                return params;
+            }
+
+        };
+        AppController.getInstance().addToRequestQueue(strReq);
+
+    }
+
+    private void highlight(JSONObject jsonObject){
+       try {
+           if (jsonObject.getString("PitchPerfect") == "1") {
+               pitch.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               pitch.setBackgroundColor(getResources().getColor(R.color.black));
+           }
+           if (jsonObject.getString("LogiciansCode") == "1") {
+               logic.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               logic.setBackgroundColor(getResources().getColor(R.color.black));
+           }
+           if (jsonObject.getString("Inquiztize") == "1") {
+               inquiz.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               inquiz.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("ArtAttack") == "1") {
+               flex.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               flex.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("ClashOfCodes") == "1") {
+               generic.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               generic.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("TerminalOfSecrets") == "1") {
+               terminal.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               terminal.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("PresentationHub") == "1") {
+               ppt.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               ppt.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("InterruptChallenge") == "1") {
+               ichallenge.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               ichallenge.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("TechnoFair") == "1") {
+               techno.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               techno.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("PipeThePiper") == "1") {
+               pipe.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               pipe.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("Datafication") == "1") {
+               ds.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               ds.setBackgroundColor(getResources().getColor(R.color.black));
+
+           }
+           if (jsonObject.getString("WorkshopAWS") == "1") {
+               aws.setBackgroundColor(getResources().getColor(R.color.gray));
+           }
+           else{
+               aws.setBackgroundColor(getResources().getColor(R.color.black));
+           }
+       }
+       catch (JSONException e){e.printStackTrace();}
     }
 }

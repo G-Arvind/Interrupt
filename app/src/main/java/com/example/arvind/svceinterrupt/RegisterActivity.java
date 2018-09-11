@@ -154,8 +154,12 @@ public class RegisterActivity extends AppCompatActivity {
                     passEditText.setText("");
                     emailEditText.setText("");
                     collegeEditText.setText("");
+                    repass.setText("");
 
-                    Intent intent=new Intent(RegisterActivity.this, Login.class);
+                    Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+                    Log.d("TAG","INTENT CHECK");
+                    Log.d("TAG","INTENT CHECK11");
+                    intent.putExtra("position", 2);
                     startActivity(intent);
                     finish();
 
@@ -194,13 +198,15 @@ public class RegisterActivity extends AppCompatActivity {
                 // Posting params to register url
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("nameInput", name);
-                params.put("emailInput",email);
+               // params.put("emailInput",email);
+                params.put("emailInput", email);
+               // params.put("numberInput", phoneNumber);
                 params.put("passInput", password);
                 params.put("collegeInput",college);
                 params.put("numberInput",phoneNumber);
                 params.put("event1", "0");params.put("event2", "0");params.put("event3", "0");params.put("event4", "0");params.put("event5", "0");
                 params.put("event6", "0");params.put("event7", "0");params.put("event8", "0");params.put("event9", "0");params.put("event10", "0");
-
+                params.put("event11", "0");params.put("event12", "0");
                 return params;
             }
 

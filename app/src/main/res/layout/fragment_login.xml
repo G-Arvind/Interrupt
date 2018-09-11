@@ -258,23 +258,16 @@
 
 
             <TextView
+                android:id="@+id/reglist"
                 android:textColor="@color/colorPrimaryDark"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="EVENTS REGISTERED"
+                android:text="Click here to Change/View Events, you have registered for."
                 android:fontFamily="@font/monts"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:gravity="center"/>
-
-            <ListView
-                android:textAlignment="center"
-                android:layout_gravity="center"
-                android:id="@+id/reglist"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </ListView>
 
 
 
