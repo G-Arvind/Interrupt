@@ -26,6 +26,11 @@
             android:text="REGISTER"
             android:gravity="center"
             android:textStyle="bold"/>
+        <TextView
+            android:gravity="center"
+            android:text="(Selected Events will apper in grey)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 
         <LinearLayout

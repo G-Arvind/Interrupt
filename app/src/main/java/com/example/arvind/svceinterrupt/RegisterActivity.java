@@ -158,7 +158,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     Intent intent=new Intent(getApplicationContext(), MainActivity.class);
                     Log.d("TAG","INTENT CHECK");
-                    Log.d("TAG","INTENT CHECK11");
+                    Log.d("TAG",MobileNumber.userMobileNumber);
                     intent.putExtra("position", 2);
                     startActivity(intent);
                     finish();

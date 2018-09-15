@@ -35,7 +35,6 @@ public class Registration_Events extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        //enrolledEvents();
 
         flex1 = false;
         ichallenge1 = false;
@@ -47,9 +46,10 @@ public class Registration_Events extends AppCompatActivity {
         ds1 = false;
         techno1 = false;
         ppt1 = false;
-
         aws1 = false;
         pipe1 = false;
+
+
 
         flex = (CardView) findViewById(R.id.flexe);
         ichallenge = (CardView) findViewById(R.id.ichallengee);
@@ -61,17 +61,15 @@ public class Registration_Events extends AppCompatActivity {
         ds = (CardView) findViewById(R.id.dse);
         techno = (CardView) findViewById(R.id.technoe);
         ppt = (CardView) findViewById(R.id.ppte);
-
         pipe = (CardView) findViewById(R.id.pipee);
         aws = (CardView) findViewById(R.id.awse);
-
         regevent = (Button) findViewById(R.id.regevent);
+
+        enrolledEvents();
 
       //  EventsArray.array[12] = 0;
 
         //highlighting enrolled events
-
-
 
         flex.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -320,6 +318,10 @@ public class Registration_Events extends AppCompatActivity {
             }
         });
 
+
+
+
+
         regevent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -419,11 +421,10 @@ public class Registration_Events extends AppCompatActivity {
                 try {
 
                     //create a login session
-                    Toast.makeText(getApplicationContext(),
-                            "Successfully Registered", Toast.LENGTH_LONG).show();
+
 
                     JSONObject jsonObject = new JSONObject(response);
-                    //highlight(jsonObject);
+                    highlight(jsonObject);
 
 
                 } catch (Exception e) {
@@ -464,85 +465,109 @@ public class Registration_Events extends AppCompatActivity {
 
     private void highlight(JSONObject jsonObject){
        try {
-           if (jsonObject.getString("PitchPerfect") == "1") {
+           if (jsonObject.getString("PitchPerfect").equals("1")) {
+               pitch1=true;
                pitch.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               pitch1=false;
                pitch.setBackgroundColor(getResources().getColor(R.color.black));
            }
-           if (jsonObject.getString("LogiciansCode") == "1") {
+           if (jsonObject.getString("LogiciansCode").equals("1") ) {
+               logic1=true;
                logic.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               logic1=false;
                logic.setBackgroundColor(getResources().getColor(R.color.black));
            }
-           if (jsonObject.getString("Inquiztize") == "1") {
+           if (jsonObject.getString("Inquiztize").equals("1")) {
+               inquiz1=true;
                inquiz.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               inquiz1=false;
                inquiz.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("ArtAttack") == "1") {
+           if (jsonObject.getString("ArtAttack").equals("1")) {
+               flex1=true;
                flex.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               flex1=false;
                flex.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("ClashOfCodes") == "1") {
+           if (jsonObject.getString("ClashOfCodes").equals("1")) {
+               generic1=true;
                generic.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               generic1=false;
                generic.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("TerminalOfSecrets") == "1") {
+           if (jsonObject.getString("TerminalOfSecrets").equals("1")) {
+               terminal1=true;
                terminal.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               terminal1=false;
                terminal.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("PresentationHub") == "1") {
+           if (jsonObject.getString("PresentationHub").equals("1")) {
+               ppt1=true;
                ppt.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               ppt1=false;
                ppt.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("InterruptChallenge") == "1") {
+           if (jsonObject.getString("InterruptChallenge") .equals("1")) {
+               ichallenge1=true;
                ichallenge.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               ichallenge1=false;
                ichallenge.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("TechnoFair") == "1") {
+           if (jsonObject.getString("TechnoFair") .equals("1")) {
+               techno1=true;
                techno.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               techno1=false;
                techno.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("PipeThePiper") == "1") {
+           if (jsonObject.getString("PipeThePiper") .equals("1")) {
+               pipe1=true;
                pipe.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               pipe1=false;
                pipe.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("Datafication") == "1") {
+           if (jsonObject.getString("Datafication") .equals("1")) {
+               ds1=true;
                ds.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               ds1=false;
                ds.setBackgroundColor(getResources().getColor(R.color.black));
 
            }
-           if (jsonObject.getString("WorkshopAWS") == "1") {
+           if (jsonObject.getString("WorkshopAWS") .equals("1")) {
+               aws1=true;
                aws.setBackgroundColor(getResources().getColor(R.color.gray));
            }
            else{
+               aws1=false;
                aws.setBackgroundColor(getResources().getColor(R.color.black));
            }
        }

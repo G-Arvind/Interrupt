@@ -334,6 +334,7 @@ public class Login extends Fragment implements MyInterface {
         protected Map<String, String> getParams() {
             // Posting parameters to login url
             Map<String, String> params = new HashMap<String, String>();
+            Log.d("TAG",MobileNumber.userMobileNumber);
             params.put("mobile", MobileNumber.userMobileNumber);
             return params;
         }
