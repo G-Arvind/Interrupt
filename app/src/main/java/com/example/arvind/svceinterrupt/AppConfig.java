@@ -13,7 +13,7 @@ public class AppConfig {
     // Server user register url
     public static String URL_REGISTER = "http://interrupt2k18.in/register/signup.php";
 
-    public static String URL_EVENTS = "http://interrupt2k18.in/login/app-files/app.php";
+    public static String URL_EVENTS = "http://interrupt2k18.in/login/app-files/eventsMobile.php";
 
     public static String URL_FETCH = "http://interrupt2k18.in/login/sample.php";
 

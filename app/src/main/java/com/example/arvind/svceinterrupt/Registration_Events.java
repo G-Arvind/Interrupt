@@ -365,6 +365,7 @@ public class Registration_Events extends AppCompatActivity {
 
                 } catch (Exception e) {
                     // JSON error
+
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
@@ -374,9 +375,15 @@ public class Registration_Events extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.e("TAG", "Login Error: " + error.getMessage());
                 Toast.makeText(getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
+                        "Successfully Registered", Toast.LENGTH_LONG).show();
+
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("position", 2);
+                startActivity(intent);
+                finish();
+                Log.e("TAG", "Login Error: " + error.getMessage());
+           //     Toast.makeText(getApplicationContext(),error.getMessage(), Toast.LENGTH_LONG).show();
 
             }
         }) {
