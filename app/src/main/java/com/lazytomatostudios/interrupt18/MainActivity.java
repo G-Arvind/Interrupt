@@ -1,11 +1,7 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
-import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -17,6 +13,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import com.lazytomatostudios.interrupt18.R;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +13,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.lazytomatostudios.interrupt18.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

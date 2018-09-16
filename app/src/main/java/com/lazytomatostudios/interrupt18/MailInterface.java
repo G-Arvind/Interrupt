@@ -1,4 +1,4 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
 /**
  * Created by Arvind on 02-09-2018.

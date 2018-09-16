@@ -1,12 +1,12 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
-import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.lazytomatostudios.interrupt18.R;
 
 
 public class EventActivity extends AppCompatActivity {

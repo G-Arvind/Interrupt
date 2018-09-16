@@ -8,7 +8,7 @@
     android:background="#212121"
     android:gravity="center"
     android:id="@+id/ll"
-    tools:context="com.example.arvind.svceinterrupt.Registration_Events">
+    tools:context="com.lazytomatostudios.interrupt18.interrupt18.com.lazytomatostudios.interrupt18.Registration_Events">
 
     <LinearLayout
         android:layout_width="match_parent"

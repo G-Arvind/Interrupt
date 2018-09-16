@@ -8,16 +8,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Html;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.arvind.svceinterrupt.MyInterface;
-import com.example.arvind.svceinterrupt.R;
+import com.lazytomatostudios.interrupt18.MyInterface;
+import com.lazytomatostudios.interrupt18.R;
 import com.github.siyamed.shapeimageview.RoundedImageView;
 
 public class Home extends Fragment implements MyInterface {

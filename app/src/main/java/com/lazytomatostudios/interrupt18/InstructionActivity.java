@@ -1,7 +1,9 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.lazytomatostudios.interrupt18.R;
 
 public class InstructionActivity extends AppCompatActivity {
 

@@ -1,9 +1,7 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.design.widget.Snackbar;
@@ -21,14 +19,10 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.lazytomatostudios.interrupt18.R;
 
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
-
-import layout.Login;
-
-import static android.R.attr.typeface;
 
 public class RegisterActivity extends AppCompatActivity {
 

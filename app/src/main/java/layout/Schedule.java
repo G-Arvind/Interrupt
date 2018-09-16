@@ -1,20 +1,16 @@
 package layout;
 
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.ProgressBar;
 
-import com.example.arvind.svceinterrupt.R;
+import com.lazytomatostudios.interrupt18.R;
 
 
 public class Schedule extends Fragment {

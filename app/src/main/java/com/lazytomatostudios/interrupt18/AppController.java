@@ -1,4 +1,4 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
 import android.app.Application;
 import android.text.TextUtils;

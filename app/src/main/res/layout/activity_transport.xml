@@ -5,7 +5,7 @@
     android:id="@+id/activity_transport"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.arvind.svceinterrupt.TransportActivity">
+    tools:context="com.lazytomatostudios.interrupt18.interrupt18.com.lazytomatostudios.interrupt18.TransportActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"

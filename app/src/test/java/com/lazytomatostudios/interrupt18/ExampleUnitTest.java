@@ -1,4 +1,4 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
 import org.junit.Test;
 

@@ -10,17 +10,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ScrollView;
 import android.widget.Toast;
 
-import com.example.arvind.svceinterrupt.EventActivity;
-import com.example.arvind.svceinterrupt.InstructionActivity;
-import com.example.arvind.svceinterrupt.MailInterface;
-import com.example.arvind.svceinterrupt.MobileNumber;
-import com.example.arvind.svceinterrupt.MyInterface;
-import com.example.arvind.svceinterrupt.R;
-import com.example.arvind.svceinterrupt.TransportActivity;
-import com.example.arvind.svceinterrupt.Registration_Events;
+import com.lazytomatostudios.interrupt18.EventActivity;
+import com.lazytomatostudios.interrupt18.InstructionActivity;
+import com.lazytomatostudios.interrupt18.MailInterface;
+import com.lazytomatostudios.interrupt18.MobileNumber;
+import com.lazytomatostudios.interrupt18.MyInterface;
+import com.lazytomatostudios.interrupt18.R;
+import com.lazytomatostudios.interrupt18.TransportActivity;
+import com.lazytomatostudios.interrupt18.Registration_Events;
 
 
 public class Dashboard extends Fragment implements MyInterface {

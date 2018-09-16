@@ -1,4 +1,4 @@
-package com.example.arvind.svceinterrupt;
+package com.lazytomatostudios.interrupt18;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.arvind.svceinterrupt", appContext.getPackageName());
+        assertEquals("com.lazytomatostudios.arvind.svceinterrupt", appContext.getPackageName());
     }
 }
