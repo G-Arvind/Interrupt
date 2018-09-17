@@ -1,6 +1,8 @@
 package com.lazytomatostudios.interrupt18;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -30,11 +32,20 @@ public class Registration_Events extends AppCompatActivity {
 
     JSONObject jsonObject =null;
 
+    SharedPreferences pref;
+
+    SharedPreferences.Editor editor;
+
+    String spval;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+
+        pref = getApplicationContext().getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+        spval=pref.getString("mobilenum", null);
 
 
         flex1 = false;
@@ -393,8 +404,8 @@ public class Registration_Events extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("mobile", MobileNumber.userMobileNumber);
-                Log.d("TAG","mobile: "+MobileNumber.userMobileNumber);
+                params.put("mobile", spval);
+                Log.d("TAG","mobile: "+spval);
                 for (int i = 1; i <= EventsArray.array.length; i++) {
                     params.put("event" + i, EventsArray.array[i-1] +"");
                     Log.d("TAG","event"+ i+":"+EventsArray.array[i-1] +"");
@@ -457,8 +468,8 @@ public class Registration_Events extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("mobile", MobileNumber.userMobileNumber);
-                Log.d("TAG","mobile: "+MobileNumber.userMobileNumber);
+                params.put("mobile", spval);
+              //  Log.d("TAG","mobile: "+MobileNumber.userMobileNumber);
                 for (int i = 1; i <= EventsArray.array.length; i++) {
                     params.put("event" + i, EventsArray.array[i-1] +"");
                     Log.d("TAG","event"+ i+":"+EventsArray.array[i-1] +"");
@@ -489,7 +500,7 @@ public class Registration_Events extends AppCompatActivity {
                logic1=false;
                logic.setBackgroundColor(getResources().getColor(R.color.black));
            }
-           if (jsonObject.getString("Inquiztize").equals("1")) {
+           if (jsonObject.getString("Inquizitive").equals("1")) {
                inquiz1=true;
                inquiz.setBackgroundColor(getResources().getColor(R.color.gray));
            }

@@ -198,8 +198,8 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
     public void onBackPressed()
     {
         new AlertDialog.Builder(this)
-                .setTitle("Alert!")
-                .setMessage("Want to Exit")
+                .setTitle("whoa there!")
+                .setMessage("Are you sure you wanna get interrupted?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 
                     @Override

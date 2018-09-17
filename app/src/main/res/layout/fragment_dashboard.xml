@@ -43,8 +43,8 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:src="@drawable/css"
                         android:padding="10dp"/>
                     <TextView
@@ -90,7 +90,6 @@
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-
                         android:src="@drawable/b4"
                         android:padding="10dp"/>
                     <TextView
@@ -126,49 +125,55 @@
             android:background="#212121"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <android.support.v7.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
                 android:id="@+id/generic"
                 android:layout_width="160dp"
-                app:cardCornerRadius="10dp"
                 android:layout_height="190dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="#000000"
-                app:cardPreventCornerOverlap="true"
-                android:layout_margin="10dp">
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="true">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/ripple"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
 
-                        android:src="@drawable/code"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:src="@drawable/code" />
+
                     <TextView
-                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
                         android:layout_marginTop="10dp"
+                        android:fontFamily="@font/monts"
                         android:text="Clash of Codes"
-                        android:textColor="#ffffff"/>
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/lightgray"
-                        android:layout_margin="10dp"/>
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
                     <TextView
-                        android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/monts"
                         android:gravity="center"
-                        android:text="A pure coding contest"
                         android:padding="5dp"
-                        android:textColor="#ffffff"/>
+                        android:text="A pure coding contest"
+                        android:textColor="#ffffff" />
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -189,11 +194,11 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
 
                         android:src="@drawable/terminal"
-                        android:padding="10dp"/>
+                       />
                     <TextView
                         android:fontFamily="@font/monts"
                         android:layout_width="wrap_content"
@@ -394,7 +399,7 @@
                     android:gravity="center">
                     <ImageView
                         android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_height="90dp"
                         android:src="@drawable/code2"
                         android:padding="10dp"/>
                     <TextView

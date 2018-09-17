@@ -55,7 +55,7 @@ public class EventActivity extends AppCompatActivity {
                     "Like riddles? We’ve got you covered.\n\n" +
                     "Like a challenge? We’ve still got you covered!\n\n" +
                     "Don’t think! Go online and start solving.\n\n");
-            eventrules.setText("1. This is an online event which will happen over a period of ten days starting from the 17th to the 27th of September.\n\n" +
+            eventrules.setText("1. This is an online event which will happen over a period of ten days starting from the 19th to the 27th of September.\n\n" +
                     "2. There will be 10+ levels, each consisting of hints to solve the particular problem\n\n" +
                     "3. The person to finish the all the levels will be declared the winner. In case of multiple people finishing all the levels, the first person to finish will be the winner.\n\n");
 
@@ -216,7 +216,7 @@ public class EventActivity extends AppCompatActivity {
                     "You never know who could come up with a better solution first\n \n" +
                     "So, brace yourself for some competitive programming and head over to Interrupt’s Pipe the Piper\n\n");
             eventrules.setText("1. Individual online event.\n\n" +
-                    "2. The event will be open for a total of 6 hours. Participants may choose a 2-hour window in this time frame to take part in the event.\n\n" +
+                    "2. The event will be open for a total of 6 hours on 23rd and 24th of September. Participants may choose a 2-hour window in this time frame to take part in the event.\n\n" +
                     "3. The participant with the highest score will be declared the winner.\n\n" +
                     "4. Plagiarism of code will lead to instant disqualification.\n\n");
 

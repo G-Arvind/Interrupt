@@ -1,7 +1,9 @@
 package layout;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -15,7 +17,6 @@ import android.widget.Toast;
 import com.lazytomatostudios.interrupt18.EventActivity;
 import com.lazytomatostudios.interrupt18.InstructionActivity;
 import com.lazytomatostudios.interrupt18.MailInterface;
-import com.lazytomatostudios.interrupt18.MobileNumber;
 import com.lazytomatostudios.interrupt18.MyInterface;
 import com.lazytomatostudios.interrupt18.R;
 import com.lazytomatostudios.interrupt18.TransportActivity;
@@ -29,6 +30,13 @@ public class Dashboard extends Fragment implements MyInterface {
     MailInterface mailInterface;
 
     Button transport,instruct,register;
+
+    SharedPreferences pref;
+
+    SharedPreferences.Editor editor;
+
+
+    String spval;
 
     public Dashboard() {
         // Required empty public constructor
@@ -73,6 +81,8 @@ public class Dashboard extends Fragment implements MyInterface {
         transport=(Button) view.findViewById(R.id.transport);
         instruct=(Button)view.findViewById(R.id.instruct);
         register=(Button)view.findViewById(R.id.register);
+
+
 
 
         flex.setOnClickListener(new View.OnClickListener() {
@@ -203,7 +213,9 @@ public class Dashboard extends Fragment implements MyInterface {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(MobileNumber.userMobileNumber.equals("dummy")){
+                pref = getActivity().getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+                spval=pref.getString("mobilenum", null);
+                if(spval==null){
                     Toast.makeText(getContext(),"Login to Continue",Toast.LENGTH_LONG).show();
                 }
                 else {

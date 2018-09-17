@@ -38,18 +38,17 @@
                 android:layout_marginBottom="20dp">
 
                 <TextView
-                    android:fontFamily="@font/monts"
-                    android:layout_gravity="center"
-                    android:background="#212121"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:paddingStart="20dp"
+                    android:background="#212121"
+                    android:fontFamily="@font/monts"
                     android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
                     android:text="@string/instruct"
-                    android:textSize="18dp"
                     android:textColor="#ffffff"
-                    />
+                    android:textSize="18dp" />
 
             </LinearLayout>
 

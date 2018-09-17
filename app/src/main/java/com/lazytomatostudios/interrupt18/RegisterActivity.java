@@ -141,7 +141,7 @@ public class RegisterActivity extends AppCompatActivity {
                     //String created_at = user
                     //      .getString("created_at");
 
-                    Toast.makeText(getApplicationContext(), "User successfully registered,Email has been sent. Try login now!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
 
                     nameEditText.setText("");
                     phoneEditText.setText("");
@@ -152,7 +152,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     Intent intent=new Intent(getApplicationContext(), MainActivity.class);
                     Log.d("TAG","INTENT CHECK");
-                    Log.d("TAG",MobileNumber.userMobileNumber);
+                //    Log.d("TAG",MobileNumber.userMobileNumber);
                     intent.putExtra("position", 2);
                     startActivity(intent);
                     finish();

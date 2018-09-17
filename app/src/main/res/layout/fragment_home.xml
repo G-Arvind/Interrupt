@@ -94,7 +94,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Interrupt has had students marking their calenders for years now and this year it’s back and bigger than ever! Burgeoing by leaps and bounds with more innovative events and our Magnum Opus attraction - the Drone Event."
+                        android:text="Interrupt has had students marking their calenders for years now and this year it’s back and bigger than ever! Burgeoning by leaps and bounds with more innovative events and our Magnum Opus attraction - the Drone Event."
                         android:textSize="15dp"
                         android:textColor="#ffffff"
                         android:fontFamily="@font/monts"/>

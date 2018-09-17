@@ -1,8 +1,10 @@
 package layout;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -25,7 +27,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.lazytomatostudios.interrupt18.AppConfig;
 import com.lazytomatostudios.interrupt18.AppController;
-import com.lazytomatostudios.interrupt18.MobileNumber;
 import com.lazytomatostudios.interrupt18.MyInterface;
 import com.lazytomatostudios.interrupt18.R;
 import com.lazytomatostudios.interrupt18.RegisterActivity;
@@ -47,6 +48,12 @@ public class Login extends Fragment implements MyInterface {
     TextView toRegistration;
 
     ScrollView scrollView;
+
+    SharedPreferences pref;
+
+    SharedPreferences.Editor editor;
+
+    String spval;
 
     CardView power;
     TextView dusername,dcollege,dnum,demail,reglist;
@@ -99,13 +106,20 @@ public class Login extends Fragment implements MyInterface {
         emailEditText.setText("");
         passwordEditText.setText("");
 
-        if(MobileNumber.userMobileNumber.equals("dummy")){
+      /*  if(MobileNumber.userMobileNumber.equals("dummy")){
+            profilepage.setVisibility(View.GONE);
+        }*/
+        pref = getActivity().getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+        spval=pref.getString("mobilenum", null);
+        editor=pref.edit();
+        if(spval==null){
             profilepage.setVisibility(View.GONE);
         }
         else {
             loginpage.setVisibility(View.GONE);
             profilepage.setVisibility(View.VISIBLE);
-            setdetails(MobileNumber.userMobileNumber);
+          //  setdetails(MobileNumber.userMobileNumber);
+            setdetails(spval);
 //            scrollView.setVisibility(View.GONE);
         }
 
@@ -124,13 +138,15 @@ public class Login extends Fragment implements MyInterface {
             @Override
             public void onClick(View view) {
                 new AlertDialog.Builder(getContext())
-                        .setTitle("Alert!")
-                        .setMessage("Signout")
+                        .setTitle("Whoa there!")
+                        .setMessage("do you really want to signout?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                MobileNumber.userMobileNumber="dummy";
+                              //  MobileNumber.userMobileNumber="dummy";
+                                editor.remove("mobilenum");
+                                editor.commit();
                                 profilepage.setVisibility(View.GONE);
                                 loginpage.setVisibility(View.VISIBLE);
                                 //   scrollView.setVisibility(View.GONE);
@@ -204,8 +220,15 @@ public class Login extends Fragment implements MyInterface {
                    // session.setLogin(true);
                     String res = response.toString();
                     if(res.contains("window.location.href")){
-                        MobileNumber.userMobileNumber=phoneNumber;
-                        Toast.makeText(getContext(), "success", Toast.LENGTH_SHORT).show();
+
+                   //     SharedPreferences pref = getActivity().getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+
+                        editor.putString("mobilenum",phoneNumber );
+                        editor.commit();
+
+
+                      //  MobileNumber.userMobileNumber=phoneNumber;
+                        Toast.makeText(getContext(), "Login Success!", Toast.LENGTH_SHORT).show();
 
 
                         loginpage.setVisibility(View.GONE);
@@ -217,11 +240,12 @@ public class Login extends Fragment implements MyInterface {
                         //scrollView.setVisibility(View.GONE);
                         emailEditText.setText("");
                         passwordEditText.setText("");
-                        setdetails(MobileNumber.userMobileNumber);
+                      //  setdetails(MobileNumber.userMobileNumber);
+                        setdetails(phoneNumber);
                     }
                     else{
                         Toast.makeText(getContext(), "Invalid details", Toast.LENGTH_SHORT).show();
-                        MobileNumber.userMobileNumber=phoneNumber;
+                      //  MobileNumber.userMobileNumber=phoneNumber;
                        // Toast.makeText(getContext(), "success", Toast.LENGTH_SHORT).show();
 
 
@@ -295,7 +319,7 @@ public class Login extends Fragment implements MyInterface {
 
                     dusername.setText(usernameValue);
                     dcollege.setText(collegeName);
-                    dnum.setText(MobileNumber.userMobileNumber);
+                    dnum.setText(number);
                     demail.setText(emailOfUser);
                 }
 
@@ -321,8 +345,9 @@ public class Login extends Fragment implements MyInterface {
         protected Map<String, String> getParams() {
             // Posting parameters to login url
             Map<String, String> params = new HashMap<String, String>();
-            Log.d("TAG",MobileNumber.userMobileNumber);
-            params.put("mobile", MobileNumber.userMobileNumber);
+          //  Log.d("TAG",MobileNumber.userMobileNumber);
+          //  params.put("mobile", MobileNumber.userMobileNumber);
+            params.put("mobile",number);
             return params;
         }
 
