@@ -38,8 +38,8 @@ public class EventActivity extends AppCompatActivity {
                     "CSS is powerful. \n\n" +
                     "Be the best artist there is.\n\n" +
                     "Create the best design and take home the prize! \n\n" +
-                    "An Attractive, interactive, user-friendly style and you’re good to go.\n\n");
-            eventrules.setText("1. Individual participation.\n\n" +
+                    "An attractive, interactive, user-friendly style and you’re good to go.\n\n");
+            eventrules.setText("1.  Individual participation.\n\n" +
                     "2. There will be a pen & paper prelims.\n\n" +
                     "3. Final round will require participants to build their own website based on the given theme.\n\n" +
                     "4. Internet access will be allowed for reference.\n\n" +
@@ -56,7 +56,7 @@ public class EventActivity extends AppCompatActivity {
                     "Like a challenge? We’ve still got you covered!\n\n" +
                     "Don’t think! Go online and start solving.\n\n");
             eventrules.setText("1. This is an online event which will happen over a period of ten days starting from the 19th to the 27th of September.\n\n" +
-                    "2. There will be 10+ levels, each consisting of hints to solve the particular problem\n\n" +
+                    "2. There will be 10+ levels, each consisting of hints to solve the particular problem.\n\n" +
                     "3. The person to finish the all the levels will be declared the winner. In case of multiple people finishing all the levels, the first person to finish will be the winner.\n\n");
 
             contact.setText("Tamizh Arasu +91 9655807979 \n\nAdithya +91 9003253308");
@@ -69,7 +69,7 @@ public class EventActivity extends AppCompatActivity {
                     "With the clock ticking, there awaits a set of questions for you to be solved. The questions get harder as you go.\n\n" +
                     "Code your way to the finish line in INTERRUPT’s mainstream coding dhamaka!\n\n");
             eventrules.setText("1. Teams of upto 3 members.\n\n" +
-                    "2. Time limit: 60 minutes\n\n" +
+                    "2. Time limit: 60 minutes.\n\n" +
                     "3. Points will be awarded based on your output. Team with the most points at the end will win.\n\n");
 
             contact.setText("Pravesh Agarwal +91 9566072778 \n\nKarthik +91 7448632621");
@@ -126,7 +126,7 @@ public class EventActivity extends AppCompatActivity {
                     "3. Usage of any electronic device is strictly prohibited. \n\n" +
                     "4. The Quizmaster's decision is final.\n\n");
 
-            contact.setText("Akash Saravanan +91 9962754468\n\nArjun Aravind 8939227284");
+            contact.setText("Akash Saravanan +91 9962754468\n\nArjun Aravind +91 8939227284");
         }
         if(intentdetail.equals("ds")){
             img.setImageResource(R.drawable.analytics);
@@ -137,7 +137,7 @@ public class EventActivity extends AppCompatActivity {
                     "Improve your Accuracy.\n\n" +
                     "Channel your inner Data Scientist.\n\n" +
                     "Join us at INTERRUPT’s Data Science Event: Datafication.\n\n" +
-                    "More information coming soon!\n\n");
+                    "More information will be sent to registered email.\n\n");
             eventrules.setText("1. This is an online individual event.\n\n" +
                     "2. Participants can submit the solution only once.\n\n" +
                     "3. The participant who manages to achieve the highest accuracy score for the given dataset will be declared the winner.\n\n" +
@@ -192,8 +192,9 @@ public class EventActivity extends AppCompatActivity {
                     "15.\tBig Data Security and Privacy\n\n");
             eventrules.setText("1. Teams of up to 3 members.\n\n" +
                     "2. Submissions must include title, author’s details, abstract, keywords and full paper should not exceed 6 pages including all tables and figures in the IEEE format.\n\n" +
-                    "3. Selected participants should bring 2 hard copies of their paper and softcopy of presentation in .ppt format.\n\n" +
-                    "4. Six minutes for presentation and two minutes for queries.\n\n");
+                    "3. Submit your abstract @ paper.interrupt@gmail.com.\n\n"+
+                    "4. Selected participants should bring 2 hard copies of their paper and softcopy of presentation in .ppt format.\n\n" +
+                    "5. Six minutes for presentation and two minutes for queries.\n\n");
 
             contact.setText("Yogeshwar +91 9597855459");
         }

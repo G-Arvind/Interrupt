@@ -141,7 +141,7 @@ public class RegisterActivity extends AppCompatActivity {
                     //String created_at = user
                     //      .getString("created_at");
 
-                    Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "User successfully registered. Login now!", Toast.LENGTH_LONG).show();
 
                     nameEditText.setText("");
                     phoneEditText.setText("");

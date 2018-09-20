@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#212121"
+    android:gravity="center"
+    tools:context="layout.Sponsors">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#212121"
+        android:gravity="center">
+
+        <TextView
+            android:textSize="30dp"
+            android:fontFamily="@font/monts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Our Sponsors"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:src="@drawable/deliumimg"
+            android:id="@+id/delium"
+            android:layout_width="200dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/deliumtxt"
+            android:textSize="20dp"
+            android:fontFamily="@font/monts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Delium Technology"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:src="@drawable/clcimg"
+            android:id="@+id/clc"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/clctxt"
+            android:textSize="20dp"
+            android:fontFamily="@font/monts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Career Launcher"
+            android:textColor="@color/colorPrimaryDark"/>
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:src="@drawable/deetaimg"
+            android:id="@+id/deeta"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/deetatxt"
+            android:textSize="20dp"
+            android:fontFamily="@font/monts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Deeta"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

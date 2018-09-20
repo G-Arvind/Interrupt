@@ -22,6 +22,7 @@ import devlight.io.library.ntb.NavigationTabBar;
 import layout.Dashboard;
 import layout.Home;
 import layout.Login;
+import layout.Sponsors;
 
 public class MainActivity extends AppCompatActivity implements MailInterface {
 
@@ -71,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
                         .build()
         );
 
-
         barModel.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_person_black_24dp),
@@ -80,6 +80,16 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
                         .badgeTitle("NTB PROF")
                         .build()
         );
+
+        barModel.add(
+                new NavigationTabBar.Model.Builder(
+                        getResources().getDrawable(R.drawable.ic_attach_money_black_24dp),
+                        R.color.colorPrimaryDark)
+                        .title("Sponsors")
+                        .badgeTitle("NTB SPON")
+                        .build()
+        );
+
 
         navigationTabBar.setModels(barModel);
         navigationTabBar.setViewPager(viewPager, 0);
@@ -160,6 +170,8 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
                     return dashboard;
                 case 2:
                     return new Login();
+                case 3:
+                    return new Sponsors();
                 default:
                     return null;
             }
@@ -168,7 +180,7 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
 
         @Override
         public int getCount() {
-            return 3;
+            return 4;
         }
 
     }
@@ -198,7 +210,7 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
     public void onBackPressed()
     {
         new AlertDialog.Builder(this)
-                .setTitle("whoa there!")
+                .setTitle("Whoa there!")
                 .setMessage("Are you sure you wanna get interrupted?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 

@@ -139,7 +139,7 @@ public class Login extends Fragment implements MyInterface {
             public void onClick(View view) {
                 new AlertDialog.Builder(getContext())
                         .setTitle("Whoa there!")
-                        .setMessage("do you really want to signout?")
+                        .setMessage("Do you really want to signout?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 
                             @Override

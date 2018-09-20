@@ -4,14 +4,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="instruct"> 1. The symposium is on September 29th, 2018.\n\n
+    <string name="instruct"> \t1. The symposium is on September 29th, 2018.\n\n
 2. There is no registration fee.\n\n
-3. Only College students can attend and college ID card is a must.\n\n
+3. Only college students can attend and college ID card is a must.\n\n
 4. Dress code: Body fit clothing, transparent or revealing outfits should be avoided.\n\n
 For Girls, Salwar Kameez with Duppatta, Jeans with Kurtis and stole is advisable.\n\n
 Torn, faded Jeans and T-Shirts will not be allowed.\n\n
-5. Events commences at 8.30 am and will close by 3.30 pm.\n\n
-6. SVCE College transport can be used and you can check the bus
+5. Events commence at 8.30 am and will close by 3.30 pm.\n\n
+6. SVCE college transport can be used and you can check the bus
 number and routes from the Transport tab in the official Interrupt
 app and website.
 </string>
